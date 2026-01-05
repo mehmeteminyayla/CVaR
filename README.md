@@ -2,8 +2,6 @@
 
 Bu küçük Python projesi, Yahoo Finance'ten hisse kapanış fiyatlarını çekip günlük getiriler üzerinden tarihsel Value at Risk (VaR) ve Conditional Value at Risk (CVaR / Expected Shortfall) hesaplaması yapar. Ayrıca portföy beklenen getirisi ve riski (standart sapma) için basit bir yardımcı fonksiyon sağlar.
 
-Not: Bu README, repository'deki `cvar.py` (güncel sürüm) dosyasına göre hazırlanmıştır.
-
 ## Öne çıkan özellikler
 - Yahoo Finance'ten kapanış verilerini çekme (`get_data`)
 - Günlük getiriler, ortalama getiriler ve kovaryans matrisi hesaplama
@@ -130,7 +128,3 @@ print(cvar_1)
 - Eksik veriler: Fonksiyonlar içlerinde `.dropna()` kullanır; ancak kullanıcının veri ön işleme yapması (ör. boş sütunları kontrol) tavsiye edilir.
 - Reproducibility: Örnek script deterministik rastgele ağırlıklar (`np.random.seed(42)`) kullanır. Kendi ağırlıklarınızı siz belirleyin.
 - CVaR hesaplama: Eğer belirlenen alpha için "tail" (VaR altı) boş ise fonksiyon `numpy.nan` döndürür.
-
-## Katkıda bulunma
-- Hatalar/öneriler için pull request veya issue açabilirsiniz.
-- CVaR için farklı tanımlar (ortalama yerine interpolasyon vb.) uygulanmak istenirse fonksiyonlar genişletilebilir.
