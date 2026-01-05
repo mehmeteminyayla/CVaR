@@ -134,6 +134,3 @@ print(cvar_1)
 ## Katkıda bulunma
 - Hatalar/öneriler için pull request veya issue açabilirsiniz.
 - CVaR için farklı tanımlar (ortalama yerine interpolasyon vb.) uygulanmak istenirse fonksiyonlar genişletilebilir.
-
-## Lisans
-Varsayılan olarak açık kaynak (ör. MIT) kabul edilebilir. Kendi tercih ettiğiniz lisansı ekleyin.
